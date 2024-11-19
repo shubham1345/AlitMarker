@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alit.WinformControls", "Alit.WinformControls\Alit.WinformControls.csproj", "{87E73A8F-B226-4C55-AA57-50EA9C53B3C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alit.Marker.Model", "Alit.Marker.Model\Alit.Marker.Model.csproj", "{5F4C76C1-52A4-432D-ABDF-E630AD451DF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alit.Marker.DAL", "Alit.Marker.DAL\Alit.Marker.DAL.csproj", "{A9A28AA2-5334-47A8-A75A-B95A055856E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alit.Marker.WinForm", "Alit.Marker.WinForm\Alit.Marker.WinForm.csproj", "{3B092966-6B53-491A-BA94-846CEED6D321}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alit.Marker.WinForm.Template", "Alit.Marker.Winform.Template\Alit.Marker.WinForm.Template.csproj", "{6754FF01-C935-4227-9C63-D97318EC0B10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alit.Marker.DBO", "Alit.Marker.DBO\Alit.Marker.DBO.csproj", "{615DB98F-0E7E-4D38-9794-F69AB5F9641A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87E73A8F-B226-4C55-AA57-50EA9C53B3C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E73A8F-B226-4C55-AA57-50EA9C53B3C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E73A8F-B226-4C55-AA57-50EA9C53B3C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E73A8F-B226-4C55-AA57-50EA9C53B3C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F4C76C1-52A4-432D-ABDF-E630AD451DF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4C76C1-52A4-432D-ABDF-E630AD451DF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4C76C1-52A4-432D-ABDF-E630AD451DF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4C76C1-52A4-432D-ABDF-E630AD451DF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9A28AA2-5334-47A8-A75A-B95A055856E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A28AA2-5334-47A8-A75A-B95A055856E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A28AA2-5334-47A8-A75A-B95A055856E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A28AA2-5334-47A8-A75A-B95A055856E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B092966-6B53-491A-BA94-846CEED6D321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B092966-6B53-491A-BA94-846CEED6D321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B092966-6B53-491A-BA94-846CEED6D321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B092966-6B53-491A-BA94-846CEED6D321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6754FF01-C935-4227-9C63-D97318EC0B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6754FF01-C935-4227-9C63-D97318EC0B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6754FF01-C935-4227-9C63-D97318EC0B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6754FF01-C935-4227-9C63-D97318EC0B10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{615DB98F-0E7E-4D38-9794-F69AB5F9641A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{615DB98F-0E7E-4D38-9794-F69AB5F9641A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{615DB98F-0E7E-4D38-9794-F69AB5F9641A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{615DB98F-0E7E-4D38-9794-F69AB5F9641A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

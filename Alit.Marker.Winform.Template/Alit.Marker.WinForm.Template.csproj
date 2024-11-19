@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6754FF01-C935-4227-9C63-D97318EC0B10}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Alit.Marker.WinForm.Template</RootNamespace>
+    <AssemblyName>Alit.Marker.WinForm.Template</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_marker_filled_30_zwp_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.Wizard, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonFunctions.cs" />
+    <Compile Include="CommonProperties.cs" />
+    <Compile Include="frmBaseTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseTemplate.designer.cs">
+      <DependentUpon>frmBaseTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCRUDTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCRUDTemplate.designer.cs">
+      <DependentUpon>frmCRUDTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboardTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboardTemplate.Designer.cs">
+      <DependentUpon>frmDashboardTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDefaultSearchWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDefaultSearchWindow.Designer.cs">
+      <DependentUpon>frmDefaultSearchWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridCRUDTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridCRUDTemplate.designer.cs">
+      <DependentUpon>frmGridCRUDTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchWindowTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchWindowTemplate.Designer.cs">
+      <DependentUpon>frmSearchWindowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNormalTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNormalTemplate.Designer.cs">
+      <DependentUpon>frmNormalTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWait.Designer.cs">
+      <DependentUpon>frmWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralizeReportGenerator.cs" />
+    <Compile Include="LookupListTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MemoryManagement.cs" />
+    <Compile Include="MultiSelectLookupListTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\frmGridReportTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmGridReportTemplate.Designer.cs">
+      <DependentUpon>frmGridReportTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmReportViewer.Designer.cs">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmBaseTemplate.resx">
+      <DependentUpon>frmBaseTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCRUDTemplate.resx">
+      <DependentUpon>frmCRUDTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboardTemplate.resx">
+      <DependentUpon>frmDashboardTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDefaultSearchWindow.resx">
+      <DependentUpon>frmDefaultSearchWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridCRUDTemplate.resx">
+      <DependentUpon>frmGridCRUDTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchWindowTemplate.resx">
+      <DependentUpon>frmSearchWindowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchWindowTemplate.tr-TR.resx">
+      <DependentUpon>frmSearchWindowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNormalTemplate.resx">
+      <DependentUpon>frmNormalTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNormalTemplate.tr-TR.resx">
+      <DependentUpon>frmNormalTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWait.resx">
+      <DependentUpon>frmWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="MultiSelectLookupListTemplate.resx">
+      <DependentUpon>MultiSelectLookupListTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\frmGridReportTemplate.resx">
+      <DependentUpon>frmGridReportTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmReportViewer.resx">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Alit.Marker.DAL\Alit.Marker.DAL.csproj">
+      <Project>{a9a28aa2-5334-47a8-a75a-b95a055856e9}</Project>
+      <Name>Alit.Marker.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Alit.Marker.Model\Alit.Marker.Model.csproj">
+      <Project>{5f4c76c1-52a4-432d-abdf-e630ad451df8}</Project>
+      <Name>Alit.Marker.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Alit.WinformControls\Alit.WinformControls.csproj">
+      <Project>{87e73a8f-b226-4c55-aa57-50ea9c53b3c1}</Project>
+      <Name>Alit.WinformControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Contact To Company Filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Contact To Company Filled-50_bluedark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bill-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Box Filled Filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bulleted List Filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check Filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checked Checkbox-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checked Checkbox-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Window-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Window-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Color-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Color-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Create New-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Create New-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete File-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete File-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GetReport_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google Web Search-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Cash in Hand Filled-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-secured-letter-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpeningBalance1-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpeningBalance-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpeningStock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paint Palette Filled-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prefix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prefix2-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prefix3-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prefix4-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prefix-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print Preview -16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print Preview Filled -16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purchase-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save Filled-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping Cart Filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stock In - 48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stock In -32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stock Out - 48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stock Transfer - 48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stones-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-32_Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-32_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8_marker_filled_30_zwp_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

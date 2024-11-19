@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DB_A05B1F_markerupdateModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbldbUpdateScript">
+          <Key>
+            <PropertyRef Name="UpdateScriptID" />
+          </Key>
+          <Property Name="UpdateScriptID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SoftwareVersionID" Type="int" Nullable="false" />
+          <Property Name="dbScriptTitle" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="dbScript" Type="varchar(max)" />
+          <Property Name="ExecutionIndex" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+          <Property Name="rcdt" Type="datetime" />
+          <Property Name="redt" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblServiceRequestLog">
+          <Key>
+            <PropertyRef Name="ServiceRequestLogID" />
+          </Key>
+          <Property Name="ServiceRequestLogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CallingAPI" Type="varchar" MaxLength="100" />
+          <Property Name="Parameteres" Type="varchar" MaxLength="100" />
+          <Property Name="IPAddress" Type="varchar" MaxLength="50" />
+          <Property Name="RequestTime" Type="datetime" />
+          <Property Name="RequestBody" Type="varchar(max)" />
+          <Property Name="ResponseTime" Type="datetime" />
+          <Property Name="ResponseBody" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="tblSoftwareRegistration">
+          <Key>
+            <PropertyRef Name="SoftwareRegistrationID" />
+          </Key>
+          <Property Name="SoftwareRegistrationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmailID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FullName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CompanyName" Type="varchar" MaxLength="50" />
+          <Property Name="BusinessType" Type="varchar" MaxLength="50" />
+          <Property Name="MobileNo" Type="varchar" MaxLength="15" />
+          <Property Name="PhoneNo" Type="varchar" MaxLength="50" />
+          <Property Name="CityName" Type="varchar" MaxLength="50" />
+          <Property Name="StateName" Type="varchar" MaxLength="50" />
+          <Property Name="CountryName" Type="varchar" MaxLength="50" />
+          <Property Name="Address" Type="varchar" MaxLength="1000" />
+          <Property Name="rcdt" Type="datetime" />
+          <Property Name="redt" Type="datetime" />
+          <Property Name="rcip" Type="varchar" MaxLength="15" />
+          <Property Name="reip" Type="varchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="tblSoftwareVersion">
+          <Key>
+            <PropertyRef Name="SoftwareVersionID" />
+          </Key>
+          <Property Name="SoftwareVersionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GUIVersionMajor" Type="int" Nullable="false" />
+          <Property Name="GUIVersionMinor" Type="int" Nullable="false" />
+          <Property Name="FilesDownloadsRequired" Type="bit" Nullable="false" />
+          <Property Name="ReleaseDateTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="DB_A05B1F_markerupdateModelStoreContainer">
+          <EntitySet Name="tbldbUpdateScript" EntityType="Self.tbldbUpdateScript" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblServiceRequestLog" EntityType="Self.tblServiceRequestLog" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblSoftwareRegistration" EntityType="Self.tblSoftwareRegistration" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblSoftwareVersion" EntityType="Self.tblSoftwareVersion" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DB_A05B1F_markerupdateModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbldbUpdateScript">
+          <Key>
+            <PropertyRef Name="UpdateScriptID" />
+          </Key>
+          <Property Name="UpdateScriptID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SoftwareVersionID" Type="Int32" Nullable="false" />
+          <Property Name="dbScriptTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dbScript" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ExecutionIndex" Type="Decimal" Precision="9" Scale="2" Nullable="false" />
+          <Property Name="rcdt" Type="DateTime" Precision="3" />
+          <Property Name="redt" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblServiceRequestLog">
+          <Key>
+            <PropertyRef Name="ServiceRequestLogID" />
+          </Key>
+          <Property Name="ServiceRequestLogID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CallingAPI" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Parameteres" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="IPAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RequestTime" Type="DateTime" Precision="3" />
+          <Property Name="RequestBody" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ResponseTime" Type="DateTime" Precision="3" />
+          <Property Name="ResponseBody" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblSoftwareRegistration">
+          <Key>
+            <PropertyRef Name="SoftwareRegistrationID" />
+          </Key>
+          <Property Name="SoftwareRegistrationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmailID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CompanyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BusinessType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MobileNo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CityName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="StateName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CountryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="rcdt" Type="DateTime" Precision="3" />
+          <Property Name="redt" Type="DateTime" Precision="3" />
+          <Property Name="rcip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="reip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblSoftwareVersion">
+          <Key>
+            <PropertyRef Name="SoftwareVersionID" />
+          </Key>
+          <Property Name="SoftwareVersionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GUIVersionMajor" Type="Int32" Nullable="false" />
+          <Property Name="GUIVersionMinor" Type="Int32" Nullable="false" />
+          <Property Name="FilesDownloadsRequired" Type="Boolean" Nullable="false" />
+          <Property Name="ReleaseDateTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="DB_A05B1F_markerupdateEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbldbUpdateScripts" EntityType="Self.tbldbUpdateScript" />
+          <EntitySet Name="tblServiceRequestLogs" EntityType="Self.tblServiceRequestLog" />
+          <EntitySet Name="tblSoftwareRegistrations" EntityType="Self.tblSoftwareRegistration" />
+          <EntitySet Name="tblSoftwareVersions" EntityType="Self.tblSoftwareVersion" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DB_A05B1F_markerupdateModelStoreContainer" CdmEntityContainer="DB_A05B1F_markerupdateEntities">
+          <EntitySetMapping Name="tbldbUpdateScripts">
+            <EntityTypeMapping TypeName="DB_A05B1F_markerupdateModel.tbldbUpdateScript">
+              <MappingFragment StoreEntitySet="tbldbUpdateScript">
+                <ScalarProperty Name="UpdateScriptID" ColumnName="UpdateScriptID" />
+                <ScalarProperty Name="SoftwareVersionID" ColumnName="SoftwareVersionID" />
+                <ScalarProperty Name="dbScriptTitle" ColumnName="dbScriptTitle" />
+                <ScalarProperty Name="dbScript" ColumnName="dbScript" />
+                <ScalarProperty Name="ExecutionIndex" ColumnName="ExecutionIndex" />
+                <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+                <ScalarProperty Name="redt" ColumnName="redt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblServiceRequestLogs">
+            <EntityTypeMapping TypeName="DB_A05B1F_markerupdateModel.tblServiceRequestLog">
+              <MappingFragment StoreEntitySet="tblServiceRequestLog">
+                <ScalarProperty Name="ServiceRequestLogID" ColumnName="ServiceRequestLogID" />
+                <ScalarProperty Name="CallingAPI" ColumnName="CallingAPI" />
+                <ScalarProperty Name="Parameteres" ColumnName="Parameteres" />
+                <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+                <ScalarProperty Name="RequestTime" ColumnName="RequestTime" />
+                <ScalarProperty Name="RequestBody" ColumnName="RequestBody" />
+                <ScalarProperty Name="ResponseTime" ColumnName="ResponseTime" />
+                <ScalarProperty Name="ResponseBody" ColumnName="ResponseBody" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblSoftwareRegistrations">
+            <EntityTypeMapping TypeName="DB_A05B1F_markerupdateModel.tblSoftwareRegistration">
+              <MappingFragment StoreEntitySet="tblSoftwareRegistration">
+                <ScalarProperty Name="SoftwareRegistrationID" ColumnName="SoftwareRegistrationID" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="BusinessType" ColumnName="BusinessType" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+                <ScalarProperty Name="CityName" ColumnName="CityName" />
+                <ScalarProperty Name="StateName" ColumnName="StateName" />
+                <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+                <ScalarProperty Name="redt" ColumnName="redt" />
+                <ScalarProperty Name="rcip" ColumnName="rcip" />
+                <ScalarProperty Name="reip" ColumnName="reip" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblSoftwareVersions">
+            <EntityTypeMapping TypeName="DB_A05B1F_markerupdateModel.tblSoftwareVersion">
+              <MappingFragment StoreEntitySet="tblSoftwareVersion">
+                <ScalarProperty Name="SoftwareVersionID" ColumnName="SoftwareVersionID" />
+                <ScalarProperty Name="GUIVersionMajor" ColumnName="GUIVersionMajor" />
+                <ScalarProperty Name="GUIVersionMinor" ColumnName="GUIVersionMinor" />
+                <ScalarProperty Name="FilesDownloadsRequired" ColumnName="FilesDownloadsRequired" />
+                <ScalarProperty Name="ReleaseDateTime" ColumnName="ReleaseDateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

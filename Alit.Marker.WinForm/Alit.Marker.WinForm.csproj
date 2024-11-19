@@ -1,0 +1,1565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B092966-6B53-491A-BA94-846CEED6D321}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Alit.Marker.WinForm</RootNamespace>
+    <AssemblyName>Alit.Marker.WinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_marker_filled_30_zwp_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v20.1.Drawing, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Images.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.1.Wizard, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.111.0\lib\net451\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.111.0\lib\net451\System.Data.SQLite.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.111.0\lib\net451\System.Data.SQLite.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.6\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Remoting">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UIAutomationClient">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Account\frmAccountBaseDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Account\frmAccountBaseDashboard.Designer.cs">
+      <DependentUpon>frmAccountBaseDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Account\frmAccountCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Account\frmAccountCRUD.Designer.cs">
+      <DependentUpon>frmAccountCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Account\frmAccountDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Account\frmCustomerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Account\frmSupplierDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Account\LookupEditBookAccount.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Account\Account\LookupEditAccount.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Account\Account\ucCustomerSelection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Account\Account\ucCustomerSelection.Designer.cs">
+      <DependentUpon>ucCustomerSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Group\frmAccountGroupCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Group\frmAccountGroupCRUD.Designer.cs">
+      <DependentUpon>frmAccountGroupCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Group\frmAccountGroupDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Group\frmAccountGroupDashboard.Designer.cs">
+      <DependentUpon>frmAccountGroupDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Group\LookupEditAccountGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Account\Group\LookupEditAccountGroupType.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Account\Transactions\Bank\frmBankReconciliation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Transactions\Bank\frmBankReconciliation.Designer.cs">
+      <DependentUpon>frmBankReconciliation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Transactions\ContraVoucher\frmContraVoucherDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Transactions\ContraVoucher\frmContraVoucherDashboard.Designer.cs">
+      <DependentUpon>frmContraVoucherDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Transactions\ContraVoucher\frmContraVoucherCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Transactions\ContraVoucher\frmContraVoucherCRUD.Designer.cs">
+      <DependentUpon>frmContraVoucherCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Transactions\JournalVoucher\frmJournalVoucherCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Transactions\JournalVoucher\frmJournalVoucherCRUD.Designer.cs">
+      <DependentUpon>frmJournalVoucherCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Transactions\JournalVoucher\frmJournalVoucherDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Transactions\JournalVoucher\frmJournalVoucherDashboard.Designer.cs">
+      <DependentUpon>frmJournalVoucherDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Transactions\Payment\frmPaymentCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Transactions\Payment\frmPaymentCRUD.Designer.cs">
+      <DependentUpon>frmPaymentCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Transactions\Payment\frmPaymentDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Transactions\Payment\frmPaymentDashboard.Designer.cs">
+      <DependentUpon>frmPaymentDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Transactions\Receipt\frmReceiptCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Transactions\Receipt\frmReceiptCRUD.Designer.cs">
+      <DependentUpon>frmReceiptCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Transactions\Receipt\frmReceiptDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Transactions\Receipt\frmReceiptDashboard.Designer.cs">
+      <DependentUpon>frmReceiptDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Transactions\Receipt\ReceiptNoPrefix\frmReceiptNoPrefixCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Transactions\Receipt\ReceiptNoPrefix\frmReceiptNoPrefixCRUD.Designer.cs">
+      <DependentUpon>frmReceiptNoPrefixCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Transactions\Receipt\ReceiptNoPrefix\frmReceiptNoPrefixGridCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Transactions\Receipt\ReceiptNoPrefix\frmReceiptNoPrefixGridCRUD.Designer.cs">
+      <DependentUpon>frmReceiptNoPrefixGridCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Transactions\Receipt\ReceiptNoPrefix\LookupEditReceiptNoPrefix.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Account\Transactions\Receipt\rptReceiptPrint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Account\Transactions\Receipt\rptReceiptPrint.Designer.cs">
+      <DependentUpon>rptReceiptPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\VoucherType\frmVoucherTypeCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\VoucherType\frmVoucherTypeCRUD.Designer.cs">
+      <DependentUpon>frmVoucherTypeCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\VoucherType\frmVoucherTypeDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\VoucherType\frmVoucherTypeDashboard.Designer.cs">
+      <DependentUpon>frmVoucherTypeDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\VoucherType\LookupEditVoucherType.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Alit\Marker\DAL\dbMarkerEntities.cs" />
+    <Compile Include="City\City\frmCityCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="City\City\frmCityCRUD.Designer.cs">
+      <DependentUpon>frmCityCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="City\City\frmCityGridCrud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="City\City\frmCityGridCrud.Designer.cs">
+      <DependentUpon>frmCityGridCrud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="City\City\LookupEditCity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="City\Country\frmCountryCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="City\Country\frmCountryCRUD.Designer.cs">
+      <DependentUpon>frmCountryCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="City\Country\frmCountryGridCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="City\Country\frmCountryGridCRUD.Designer.cs">
+      <DependentUpon>frmCountryGridCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="City\Country\LookupEditCountry.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="City\State\frmStateCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="City\State\frmStateCRUD.Designer.cs">
+      <DependentUpon>frmStateCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="City\State\frmStateGridCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="City\State\frmStateGridCRUD.Designer.cs">
+      <DependentUpon>frmStateGridCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="City\State\LookupEditState.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommonFunctions.cs" />
+    <Compile Include="Customer\frmCalculateCustomerBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\frmCalculateCustomerBalance.Designer.cs">
+      <DependentUpon>frmCalculateCustomerBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\frmCustomerCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\frmCustomerCRUD.Designer.cs">
+      <DependentUpon>frmCustomerCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\frmCustomerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\frmCustomerDashboard.Designer.cs">
+      <DependentUpon>frmCustomerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\frmCustomerOpeningBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\frmCustomerOpeningBalance.Designer.cs">
+      <DependentUpon>frmCustomerOpeningBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\LookupEditCustomer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customer\ucCustomerSelectionOld.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer\ucCustomerSelectionOld.Designer.cs">
+      <DependentUpon>ucCustomerSelectionOld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Masters\AdditionalItems\frmAdditionalItemCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Masters\AdditionalItems\frmAdditionalItemCRUD.Designer.cs">
+      <DependentUpon>frmAdditionalItemCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Masters\AdditionalItems\frmAdditionalItemDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Masters\AdditionalItems\frmAdditionalItemDashboard.Designer.cs">
+      <DependentUpon>frmAdditionalItemDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Masters\AdditionalItems\LookupEditAdditionalItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERP\Masters\Transport\frmTransportCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Masters\Transport\frmTransportCRUD.Designer.cs">
+      <DependentUpon>frmTransportCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Masters\Transport\frmTransportGridGRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Masters\Transport\frmTransportGridGRUD.Designer.cs">
+      <DependentUpon>frmTransportGridGRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Masters\Transport\LookupEditTransport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseBill\frmPurchaseBillCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseBill\frmPurchaseBillCRUD.Designer.cs">
+      <DependentUpon>frmPurchaseBillCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseBill\frmPurchaseBillDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseBill\frmPurchaseBillDashboard.Designer.cs">
+      <DependentUpon>frmPurchaseBillDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseBill\PurchaseReciptNo\frmPurchaseReceiptNoPrefixCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseBill\PurchaseReciptNo\frmPurchaseReceiptNoPrefixCRUD.Designer.cs">
+      <DependentUpon>frmPurchaseReceiptNoPrefixCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseBill\PurchaseReciptNo\frmPurchaseReceiptNoPrefixGridCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseBill\PurchaseReciptNo\frmPurchaseReceiptNoPrefixGridCRUD.Designer.cs">
+      <DependentUpon>frmPurchaseReceiptNoPrefixGridCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseBill\PurchaseReciptNo\LookupEditPurchaseReceiptNoPrefix.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseReturn\frmPurchaseReturnCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseReturn\frmPurchaseReturnCRUD.Designer.cs">
+      <DependentUpon>frmPurchaseReturnCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseReturn\frmPurchaseReturnDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseReturn\frmPurchaseReturnDashboard.Designer.cs">
+      <DependentUpon>frmPurchaseReturnDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseReturn\PurchaseReturnNoPrefix\frmPurchaseReturnNoPrefix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseReturn\PurchaseReturnNoPrefix\frmPurchaseReturnNoPrefix.Designer.cs">
+      <DependentUpon>frmPurchaseReturnNoPrefix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseReturn\PurchaseReturnNoPrefix\frmPurchaseReturnNoPrefixGridCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseReturn\PurchaseReturnNoPrefix\frmPurchaseReturnNoPrefixGridCRUD.Designer.cs">
+      <DependentUpon>frmPurchaseReturnNoPrefixGridCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Purchase\PurchaseReturn\PurchaseReturnNoPrefix\LookupEditPurchaseReturnNoPrefix.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\frmSaleDefaultDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\frmSaleDefaultDashboard.Designer.cs">
+      <DependentUpon>frmSaleDefaultDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\frmSaleTransactionDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\frmSaleTransactionDashboard.Designer.cs">
+      <DependentUpon>frmSaleTransactionDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\frmSaleInvoiceCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\frmSaleInvoiceCRUD.Designer.cs">
+      <DependentUpon>frmSaleInvoiceCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\frmSaleInvoiceDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\frmSaleInvoiceDashboard.Designer.cs">
+      <DependentUpon>frmSaleInvoiceDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\InvoiceFormatController.cs" />
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\rptInvoicePrintStandardA4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\rptInvoicePrintStandardA4.Designer.cs">
+      <DependentUpon>rptInvoicePrintStandardA4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\rptInvoicePrintStandardA5.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\rptInvoicePrintStandardA5.Designer.cs">
+      <DependentUpon>rptInvoicePrintStandardA5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\rptInvoicePrintStandardA6.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\rptInvoicePrintStandardA6.Designer.cs">
+      <DependentUpon>rptInvoicePrintStandardA6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\rptInvoicePrint_AlitTech.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\rptInvoicePrint_AlitTech.Designer.cs">
+      <DependentUpon>rptInvoicePrint_AlitTech.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\rptInvoicePrint_MMReshamwala.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\rptInvoicePrint_MMReshamwala.Designer.cs">
+      <DependentUpon>rptInvoicePrint_MMReshamwala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\LookupEditSaleInvoice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\SaleInvoiceNoPrefix\frmSaleInvoiceNoPrefixCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\SaleInvoiceNoPrefix\frmSaleInvoiceNoPrefixCRUD.Designer.cs">
+      <DependentUpon>frmSaleInvoiceNoPrefixCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\SaleInvoiceNoPrefix\frmSaleInvoiceNoPrefixGridCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\SaleInvoiceNoPrefix\frmSaleInvoiceNoPrefixGridCRUD.Designer.cs">
+      <DependentUpon>frmSaleInvoiceNoPrefixGridCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\SaleInvoiceNoPrefix\LookupEditSaleInvoiceNoPrefix.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleOrder\frmSaleOrderCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleOrder\frmSaleOrderCRUD.Designer.cs">
+      <DependentUpon>frmSaleOrderCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleOrder\frmSaleOrderDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleOrder\frmSaleOrderDashboard.Designer.cs">
+      <DependentUpon>frmSaleOrderDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleOrder\LookupEditSaleOrder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleOrder\rptSaleOrderA4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleOrder\rptSaleOrderA4.Designer.cs">
+      <DependentUpon>rptSaleOrderA4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleOrder\SaleOrderNoPrefix\frmSaleOrderNoPrefixCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleOrder\SaleOrderNoPrefix\frmSaleOrderNoPrefixCRUD.Designer.cs">
+      <DependentUpon>frmSaleOrderNoPrefixCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleOrder\SaleOrderNoPrefix\frmSaleOrderNoPrefixGridCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleOrder\SaleOrderNoPrefix\frmSaleOrderNoPrefixGridCRUD.Designer.cs">
+      <DependentUpon>frmSaleOrderNoPrefixGridCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleOrder\SaleOrderNoPrefix\LookupEditSaleOrderPrefix.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleReturn\frmSaleReturnCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleReturn\frmSaleReturnCRUD.Designer.cs">
+      <DependentUpon>frmSaleReturnCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleReturn\frmSaleReturnDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleReturn\frmSaleReturnDashboard.Designer.cs">
+      <DependentUpon>frmSaleReturnDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleReturn\rptSaleReturnA4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleReturn\rptSaleReturnA4.Designer.cs">
+      <DependentUpon>rptSaleReturnA4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleReturn\SaleReturnNoPrefix\frmSaleReturnNoPrefixCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleReturn\SaleReturnNoPrefix\frmSaleReturnNoPrefixCRUD.Designer.cs">
+      <DependentUpon>frmSaleReturnNoPrefixCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleReturn\SaleReturnNoPrefix\frmSaleReturnNoPrefixGridCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleReturn\SaleReturnNoPrefix\frmSaleReturnNoPrefixGridCRUD.Designer.cs">
+      <DependentUpon>frmSaleReturnNoPrefixGridCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERP\Transaction\Sales\SaleReturn\SaleReturnNoPrefix\LookupEditSaleReturnNoPrefix.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmOpeningStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmOpeningStock.Designer.cs">
+      <DependentUpon>frmOpeningStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmOpeningStockGridCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmOpeningStockGridCRUD.Designer.cs">
+      <DependentUpon>frmOpeningStockGridCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Masters\Product\frmPriceListCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Masters\Product\frmPriceListCRUD.Designer.cs">
+      <DependentUpon>frmPriceListCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Masters\Product\frmPriceListGridCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Masters\Product\frmPriceListGridCRUD.Designer.cs">
+      <DependentUpon>frmPriceListGridCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Masters\Product\LookupEditPriceList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\Masters\StockItemTaxCategory\frmStockItemTaxCategoryCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Masters\StockItemTaxCategory\frmStockItemTaxCategoryCRUD.Designer.cs">
+      <DependentUpon>frmStockItemTaxCategoryCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Masters\StockItemTaxCategory\frmStockItemTaxCategoryGridCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Masters\StockItemTaxCategory\frmStockItemTaxCategoryGridCRUD.Designer.cs">
+      <DependentUpon>frmStockItemTaxCategoryGridCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Masters\StockItemTaxCategory\LookupEditStockItemTaxCategory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\Masters\StockItemTax\frmStockItemTaxCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Masters\StockItemTax\frmStockItemTaxCRUD.Designer.cs">
+      <DependentUpon>frmStockItemTaxCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Masters\StockItemTax\frmStockItemTaxGridCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Masters\StockItemTax\frmStockItemTaxGridCRUD.Designer.cs">
+      <DependentUpon>frmStockItemTaxGridCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Masters\StockItemTax\LookupEditStockItemTax.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\Masters\StockItem\frmStockItemCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Masters\StockItem\frmStockItemCRUD.Designer.cs">
+      <DependentUpon>frmStockItemCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Masters\StockItem\frmStockItemDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Masters\StockItem\frmStockItemDashboard.Designer.cs">
+      <DependentUpon>frmStockItemDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Masters\StockItem\LookupEditStockItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\Masters\Unit\frmUnitCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Masters\Unit\frmUnitCRUD.Designer.cs">
+      <DependentUpon>frmUnitCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Masters\Unit\frmUnitGridCrud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Masters\Unit\frmUnitGridCrud.Designer.cs">
+      <DependentUpon>frmUnitGridCrud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Masters\Unit\LookupEditUnit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\Reports\frmRepStockInHand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Reports\frmRepStockInHand.Designer.cs">
+      <DependentUpon>frmRepStockInHand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Reports\frmRepStockLedger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Reports\frmRepStockLedger.Designer.cs">
+      <DependentUpon>frmRepStockLedger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Transaction\StockIn\frmStockInCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Transaction\StockIn\frmStockInCRUD.Designer.cs">
+      <DependentUpon>frmStockInCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Transaction\StockIn\frmStockInDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Transaction\StockIn\frmStockInDashboard.Designer.cs">
+      <DependentUpon>frmStockInDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Transaction\StockIn\LookupEditStockIn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\Transaction\StockOut\frmStockOutCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Transaction\StockOut\frmStockOutCRUD.Designer.cs">
+      <DependentUpon>frmStockOutCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Transaction\StockOut\frmStockOutDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Transaction\StockOut\frmStockOutDashboard.Designer.cs">
+      <DependentUpon>frmStockOutDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Transaction\StockOut\LookupEditStockOut.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\Formula\frmProductFormulaCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\Formula\frmProductFormulaCRUD.Designer.cs">
+      <DependentUpon>frmProductFormulaCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturing\Process\frmProcessCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\Process\frmProcessCRUD.Designer.cs">
+      <DependentUpon>frmProcessCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturing\Process\frmProcessDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\Process\frmProcessDashboard.Designer.cs">
+      <DependentUpon>frmProcessDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmInventoryDefaultDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmInventoryDefaultDashboard.Designer.cs">
+      <DependentUpon>frmInventoryDefaultDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\frmNavigationDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Navigation\frmNavigationDashboard.Designer.cs">
+      <DependentUpon>frmNavigationDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Navigation\SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\Accounts\Transactions\frmRepBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Accounts\Transactions\frmRepBalance.Designer.cs">
+      <DependentUpon>frmRepBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Accounts\Transactions\frmRepDayBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Accounts\Transactions\frmRepDayBook.Designer.cs">
+      <DependentUpon>frmRepDayBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Accounts\Transactions\frmRepLedger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Accounts\Transactions\frmRepLedger.Designer.cs">
+      <DependentUpon>frmRepLedger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TransactionReports\frmRepCustomerBalanceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\TransactionReports\frmRepCustomerBalanceReport.Designer.cs">
+      <DependentUpon>frmRepCustomerBalanceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TransactionReports\frmRepTransactionRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\TransactionReports\frmRepTransactionRegister.Designer.cs">
+      <DependentUpon>frmRepTransactionRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ApplicationSettings\frmApplicationSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ApplicationSettings\frmApplicationSettings.Designer.cs">
+      <DependentUpon>frmApplicationSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ChangePassword\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ChangePassword\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Compnay\frmCompanyCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\Compnay\frmCompanyCRUD.Designer.cs">
+      <DependentUpon>frmCompanyCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Compnay\frmCompanyDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\Compnay\frmCompanyDashboard.Designer.cs">
+      <DependentUpon>frmCompanyDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Compnay\frmCompanySelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\Compnay\frmCompanySelection.Designer.cs">
+      <DependentUpon>frmCompanySelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Compnay\LookupEditCompany.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Settings\FinancialPeriod\frmFinancialPeriodCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\FinancialPeriod\frmFinancialPeriodCRUD.Designer.cs">
+      <DependentUpon>frmFinancialPeriodCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\FinancialPeriod\frmFinancialPeriodDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\FinancialPeriod\frmFinancialPeriodDashboard.Designer.cs">
+      <DependentUpon>frmFinancialPeriodDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\FinancialPeriod\LookupEditFinancialPeriod.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SMS\frmSMSLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMS\frmSMSLog.Designer.cs">
+      <DependentUpon>frmSMSLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMS\SMSHandler.cs" />
+    <Compile Include="Users\frmUserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmUserLogin.Designer.cs">
+      <DependentUpon>frmUserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserGroup\frmUserGroupCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UserGroup\frmUserGroupCRUD.Designer.cs">
+      <DependentUpon>frmUserGroupCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserGroup\frmUserGroupGridCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UserGroup\frmUserGroupGridCRUD.Designer.cs">
+      <DependentUpon>frmUserGroupGridCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserGroup\LookupEditUserGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Users\User\frmUserCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\User\frmUserCRUD.Designer.cs">
+      <DependentUpon>frmUserCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\User\frmUserDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\User\frmUserDashboard.Designer.cs">
+      <DependentUpon>frmUserDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\User\LookupEditUser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XRDesignRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Account\Account\frmAccountBaseDashboard.resx">
+      <DependentUpon>frmAccountBaseDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Account\frmAccountCRUD.resx">
+      <DependentUpon>frmAccountCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Account\frmAccountDashboard.resx">
+      <DependentUpon>frmAccountDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Account\ucCustomerSelection.resx">
+      <DependentUpon>ucCustomerSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Group\frmAccountGroupCRUD.resx">
+      <DependentUpon>frmAccountGroupCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Group\frmAccountGroupDashboard.resx">
+      <DependentUpon>frmAccountGroupDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Transactions\Bank\frmBankReconciliation.resx">
+      <DependentUpon>frmBankReconciliation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Transactions\ContraVoucher\frmContraVoucherDashboard.resx">
+      <DependentUpon>frmContraVoucherDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Transactions\ContraVoucher\frmContraVoucherCRUD.resx">
+      <DependentUpon>frmContraVoucherCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Transactions\JournalVoucher\frmJournalVoucherCRUD.resx">
+      <DependentUpon>frmJournalVoucherCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Transactions\JournalVoucher\frmJournalVoucherDashboard.resx">
+      <DependentUpon>frmJournalVoucherDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Transactions\Payment\frmPaymentCRUD.resx">
+      <DependentUpon>frmPaymentCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Transactions\Payment\frmPaymentDashboard.resx">
+      <DependentUpon>frmPaymentDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Transactions\Receipt\frmReceiptCRUD.resx">
+      <DependentUpon>frmReceiptCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Transactions\Receipt\frmReceiptDashboard.resx">
+      <DependentUpon>frmReceiptDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Transactions\Receipt\ReceiptNoPrefix\frmReceiptNoPrefixCRUD.resx">
+      <DependentUpon>frmReceiptNoPrefixCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Transactions\Receipt\ReceiptNoPrefix\frmReceiptNoPrefixGridCRUD.resx">
+      <DependentUpon>frmReceiptNoPrefixGridCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Transactions\Receipt\rptReceiptPrint.resx">
+      <DependentUpon>rptReceiptPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\VoucherType\frmVoucherTypeCRUD.resx">
+      <DependentUpon>frmVoucherTypeCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\VoucherType\frmVoucherTypeDashboard.resx">
+      <DependentUpon>frmVoucherTypeDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="City\City\frmCityCRUD.resx">
+      <DependentUpon>frmCityCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="City\City\frmCityGridCrud.resx">
+      <DependentUpon>frmCityGridCrud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="City\Country\frmCountryCRUD.resx">
+      <DependentUpon>frmCountryCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="City\Country\frmCountryGridCRUD.resx">
+      <DependentUpon>frmCountryGridCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="City\State\frmStateCRUD.resx">
+      <DependentUpon>frmStateCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="City\State\frmStateGridCRUD.resx">
+      <DependentUpon>frmStateGridCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\frmCalculateCustomerBalance.resx">
+      <DependentUpon>frmCalculateCustomerBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\frmCustomerCRUD.resx">
+      <DependentUpon>frmCustomerCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\frmCustomerDashboard.resx">
+      <DependentUpon>frmCustomerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\frmCustomerOpeningBalance.resx">
+      <DependentUpon>frmCustomerOpeningBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\ucCustomerSelectionOld.resx">
+      <DependentUpon>ucCustomerSelectionOld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Masters\AdditionalItems\frmAdditionalItemCRUD.resx">
+      <DependentUpon>frmAdditionalItemCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Masters\AdditionalItems\frmAdditionalItemDashboard.resx">
+      <DependentUpon>frmAdditionalItemDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Masters\Transport\frmTransportCRUD.resx">
+      <DependentUpon>frmTransportCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Masters\Transport\frmTransportGridGRUD.resx">
+      <DependentUpon>frmTransportGridGRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Purchase\PurchaseBill\frmPurchaseBillCRUD.resx">
+      <DependentUpon>frmPurchaseBillCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Purchase\PurchaseBill\frmPurchaseBillDashboard.resx">
+      <DependentUpon>frmPurchaseBillDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Purchase\PurchaseBill\PurchaseReciptNo\frmPurchaseReceiptNoPrefixCRUD.resx">
+      <DependentUpon>frmPurchaseReceiptNoPrefixCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Purchase\PurchaseBill\PurchaseReciptNo\frmPurchaseReceiptNoPrefixGridCRUD.resx">
+      <DependentUpon>frmPurchaseReceiptNoPrefixGridCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Purchase\PurchaseReturn\frmPurchaseReturnCRUD.resx">
+      <DependentUpon>frmPurchaseReturnCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Purchase\PurchaseReturn\frmPurchaseReturnDashboard.resx">
+      <DependentUpon>frmPurchaseReturnDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Purchase\PurchaseReturn\PurchaseReturnNoPrefix\frmPurchaseReturnNoPrefix.resx">
+      <DependentUpon>frmPurchaseReturnNoPrefix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Purchase\PurchaseReturn\PurchaseReturnNoPrefix\frmPurchaseReturnNoPrefixGridCRUD.resx">
+      <DependentUpon>frmPurchaseReturnNoPrefixGridCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\frmSaleDefaultDashboard.resx">
+      <DependentUpon>frmSaleDefaultDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\frmSaleTransactionDashboard.resx">
+      <DependentUpon>frmSaleTransactionDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleInvoice\frmSaleInvoiceCRUD.resx">
+      <DependentUpon>frmSaleInvoiceCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleInvoice\frmSaleInvoiceDashboard.resx">
+      <DependentUpon>frmSaleInvoiceDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\rptInvoicePrintStandardA4.resx">
+      <DependentUpon>rptInvoicePrintStandardA4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\rptInvoicePrintStandardA5.resx">
+      <DependentUpon>rptInvoicePrintStandardA5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\rptInvoicePrintStandardA6.resx">
+      <DependentUpon>rptInvoicePrintStandardA6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\rptInvoicePrint_AlitTech.resx">
+      <DependentUpon>rptInvoicePrint_AlitTech.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleInvoice\InvoiceFormats\rptInvoicePrint_MMReshamwala.resx">
+      <DependentUpon>rptInvoicePrint_MMReshamwala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleInvoice\SaleInvoiceNoPrefix\frmSaleInvoiceNoPrefixCRUD.resx">
+      <DependentUpon>frmSaleInvoiceNoPrefixCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleInvoice\SaleInvoiceNoPrefix\frmSaleInvoiceNoPrefixGridCRUD.resx">
+      <DependentUpon>frmSaleInvoiceNoPrefixGridCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleOrder\frmSaleOrderCRUD.resx">
+      <DependentUpon>frmSaleOrderCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleOrder\frmSaleOrderDashboard.resx">
+      <DependentUpon>frmSaleOrderDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleOrder\rptSaleOrderA4.resx">
+      <DependentUpon>rptSaleOrderA4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleOrder\SaleOrderNoPrefix\frmSaleOrderNoPrefixCRUD.resx">
+      <DependentUpon>frmSaleOrderNoPrefixCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleOrder\SaleOrderNoPrefix\frmSaleOrderNoPrefixGridCRUD.resx">
+      <DependentUpon>frmSaleOrderNoPrefixGridCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleReturn\frmSaleReturnCRUD.resx">
+      <DependentUpon>frmSaleReturnCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleReturn\frmSaleReturnDashboard.resx">
+      <DependentUpon>frmSaleReturnDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleReturn\rptSaleReturnA4.resx">
+      <DependentUpon>rptSaleReturnA4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleReturn\SaleReturnNoPrefix\frmSaleReturnNoPrefixCRUD.resx">
+      <DependentUpon>frmSaleReturnNoPrefixCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERP\Transaction\Sales\SaleReturn\SaleReturnNoPrefix\frmSaleReturnNoPrefixGridCRUD.resx">
+      <DependentUpon>frmSaleReturnNoPrefixGridCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmOpeningStock.resx">
+      <DependentUpon>frmOpeningStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmOpeningStockGridCRUD.resx">
+      <DependentUpon>frmOpeningStockGridCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Masters\Product\frmPriceListCRUD.resx">
+      <DependentUpon>frmPriceListCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Masters\Product\frmPriceListGridCRUD.resx">
+      <DependentUpon>frmPriceListGridCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Masters\StockItemTaxCategory\frmStockItemTaxCategoryCRUD.resx">
+      <DependentUpon>frmStockItemTaxCategoryCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Masters\StockItemTaxCategory\frmStockItemTaxCategoryGridCRUD.resx">
+      <DependentUpon>frmStockItemTaxCategoryGridCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Masters\StockItemTax\frmStockItemTaxCRUD.resx">
+      <DependentUpon>frmStockItemTaxCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Masters\StockItemTax\frmStockItemTaxGridCRUD.resx">
+      <DependentUpon>frmStockItemTaxGridCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Masters\StockItem\frmStockItemCRUD.resx">
+      <DependentUpon>frmStockItemCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Masters\StockItem\frmStockItemDashboard.resx">
+      <DependentUpon>frmStockItemDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Masters\Unit\frmUnitCRUD.resx">
+      <DependentUpon>frmUnitCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Masters\Unit\frmUnitGridCrud.resx">
+      <DependentUpon>frmUnitGridCrud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Reports\frmRepStockInHand.resx">
+      <DependentUpon>frmRepStockInHand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Reports\frmRepStockLedger.resx">
+      <DependentUpon>frmRepStockLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Transaction\StockIn\frmStockInCRUD.resx">
+      <DependentUpon>frmStockInCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Transaction\StockIn\frmStockInDashboard.resx">
+      <DependentUpon>frmStockInDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Transaction\StockOut\frmStockOutCRUD.resx">
+      <DependentUpon>frmStockOutCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Transaction\StockOut\frmStockOutDashboard.resx">
+      <DependentUpon>frmStockOutDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\Formula\frmProductFormulaCRUD.resx">
+      <DependentUpon>frmProductFormulaCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\Process\frmProcessCRUD.resx">
+      <DependentUpon>frmProcessCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\Process\frmProcessDashboard.resx">
+      <DependentUpon>frmProcessDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmInventoryDefaultDashboard.resx">
+      <DependentUpon>frmInventoryDefaultDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigation\frmNavigationDashboard.resx">
+      <DependentUpon>frmNavigationDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigation\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\Accounts\Transactions\frmRepBalance.resx">
+      <DependentUpon>frmRepBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Accounts\Transactions\frmRepDayBook.resx">
+      <DependentUpon>frmRepDayBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Accounts\Transactions\frmRepLedger.resx">
+      <DependentUpon>frmRepLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TransactionReports\frmRepCustomerBalanceReport.resx">
+      <DependentUpon>frmRepCustomerBalanceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TransactionReports\frmRepTransactionRegister.resx">
+      <DependentUpon>frmRepTransactionRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ApplicationSettings\frmApplicationSettings.resx">
+      <DependentUpon>frmApplicationSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ChangePassword\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Compnay\frmCompanyCRUD.resx">
+      <DependentUpon>frmCompanyCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Compnay\frmCompanyDashboard.resx">
+      <DependentUpon>frmCompanyDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Compnay\frmCompanySelection.resx">
+      <DependentUpon>frmCompanySelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\FinancialPeriod\frmFinancialPeriodCRUD.resx">
+      <DependentUpon>frmFinancialPeriodCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\FinancialPeriod\frmFinancialPeriodDashboard.resx">
+      <DependentUpon>frmFinancialPeriodDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMS\frmSMSLog.resx">
+      <DependentUpon>frmSMSLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmUserLogin.resx">
+      <DependentUpon>frmUserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserGroup\frmUserGroupCRUD.resx">
+      <DependentUpon>frmUserGroupCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserGroup\frmUserGroupGridCRUD.resx">
+      <DependentUpon>frmUserGroupGridCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\User\frmUserCRUD.resx">
+      <DependentUpon>frmUserCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\User\frmUserDashboard.resx">
+      <DependentUpon>frmUserDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>XRDesignRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Account.Group.AccountGroupDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Account.Transactions.Bank.BankReconciliationDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Account.Transactions.JournalVoucher.JournalVoucherDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Account.Transactions.JournalVoucher.JournalVoucherDetailViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Account.VoucherType.VoucherTypeDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.CashBank.Payment.PaymentDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.CashBank.Receipt.ReceiptDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.CashBank.Receipt.ReceiptNoPrefixViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.City.CityViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.City.StateViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Customer.CustomerDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Customer.CustomerEditListModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Customer.CustomerLookUpListModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Customer.CustomerOpeningBalanceEditListModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Inventory.ProductOpeningStockDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Inventory.ProductOpeningStockEditListModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Inventory.ProductOpeningStockViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Inventory.Reports.StockInHandReportModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Inventory.StockInDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Inventory.StockInProductDetailViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Inventory.StockTransferPTP_TRtoSizeDetailViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Manufacturing.Formula.ProductFormulaDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Manufacturing.Process.ProcessDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Manufacturing.ProcessDetailViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Product.PriceListViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Product.ProductDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Product.ProductRateEditModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Product.ProductSelectionViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Product.ProductTaxCategoryViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Product.ProductTaxViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Purchase.PurchaseBill.PurchaseBillDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Purchase.PurchaseBill.PurchaseReceiptNoPrefixViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Purchase.PurchaseReturn.PurchaseReturnDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Purchase.PurchaseReturn.PurchaseReturnNoPrefixViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Reports.Accounts.Transactions.BalanceReportViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Reports.Accounts.Transactions.DayBookReportViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Reports.Accounts.Transactions.LedgerReportViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Reports.Inventory.StockInHandReportModel1.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Reports.Inventory.StockInHandReportViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Reports.Inventory.StockLedgerReportModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Reports.TransationReports.CustomerBalanceReportModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Reports.TransationReports.RepTransactionRegisterReportModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Sales.SaleInvoice.SaleInvoiceDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Sales.SaleInvoice.SaleInvoiceNoPrefixViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Sales.SaleInvoiceAdditionalsViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Sales.SaleInvoicePrefixEditListModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Sales.SaleInvoiceProductDetailViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Sales.SaleOrder.SaleOrderDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Sales.SaleOrder.SaleOrderNoPrefixViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Sales.SaleReturn.SaleReturnDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Sales.SaleReturn.SaleReturnNoPrefixViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Sales.SaleReturn.SaleReturnViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Settings.Compnay.CompanyDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.TransactionsCommon.AdditionalItem.AdditionalItemDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Users.MenuOptionPermissionViewModel.datasource" />
+    <None Include="Properties\DataSources\Alit.Marker.Model.Users.User.UserDashboardViewModel.datasource" />
+    <None Include="Properties\DataSources\SchoolerLite.Model.Users.UserRoleLookUpViewModel.datasource" />
+    <None Include="Properties\DataSources\SchoolerLite.Model.Users.UserRolePermissionViewModel.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\icons8-blender-filled-50.png" />
+    <None Include="Resources\icons8-bot-filled-48.png" />
+    <None Include="Resources\icons8-test-tube-filled-32.png" />
+    <None Include="Resources\icons8-test-tube-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Alit.Marker.DBO\Alit.Marker.DBO.csproj">
+      <Project>{615DB98F-0E7E-4D38-9794-F69AB5F9641A}</Project>
+      <Name>Alit.Marker.DBO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Alit.Marker.Winform.Template\Alit.Marker.WinForm.Template.csproj">
+      <Project>{6754ff01-c935-4227-9c63-d97318ec0b10}</Project>
+      <Name>Alit.Marker.WinForm.Template</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Alit.WinformControls\Alit.WinformControls.csproj">
+      <Project>{87e73a8f-b226-4c55-aa57-50ea9c53b3c1}</Project>
+      <Name>Alit.WinformControls</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\Alit.Marker.DAL\Alit.Marker.DAL.csproj">
+      <Project>{a9a28aa2-5334-47a8-a75a-b95a055856e9}</Project>
+      <Name>Alit.Marker.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Alit.Marker.Model\Alit.Marker.Model.csproj">
+      <Project>{5f4c76c1-52a4-432d-abdf-e630ad451df8}</Project>
+      <Name>Alit.Marker.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="applicationicon.ico" />
+    <Content Include="icons8_marker_filled_30_zwp_icon.ico" />
+    <Content Include="MarkerApplicationIcon.ico" />
+    <Content Include="Resources\Add Contact To Company Filled-50.png" />
+    <Content Include="Resources\Add Contact To Company Filled-50_bluedark.png" />
+    <Content Include="Resources\Bill-50.png" />
+    <Content Include="Resources\Box Filled Filled-50.png" />
+    <Content Include="Resources\Bulleted List Filled-50.png" />
+    <Content Include="Resources\Check Filled-50.png" />
+    <Content Include="Resources\Check-32.png" />
+    <Content Include="Resources\Checked Checkbox-16.png" />
+    <Content Include="Resources\Checked Checkbox-32.png" />
+    <Content Include="Resources\Close Window-16.png" />
+    <Content Include="Resources\Close Window-32.png" />
+    <Content Include="Resources\Color-16.png" />
+    <Content Include="Resources\Color-32.png" />
+    <Content Include="Resources\Create New-16.png" />
+    <Content Include="Resources\Create New-32.png" />
+    <Content Include="Resources\Delete File-16.png" />
+    <Content Include="Resources\Delete File-32.png" />
+    <Content Include="Resources\Delete-32.png" />
+    <Content Include="Resources\Exit-16.png" />
+    <Content Include="Resources\Exit-32.png" />
+    <Content Include="Resources\GetReport_16.png" />
+    <Content Include="Resources\Google Web Search-32.png" />
+    <Content Include="Resources\icons8-Cash in Hand Filled-28.png" />
+    <Content Include="Resources\icons8-receive-cash-filled-28.png" />
+    <Content Include="Resources\icons8-receive-cash-filled-32.png" />
+    <Content Include="Resources\icons8-receive-cash-filled-50.png" />
+    <Content Include="Resources\icons8-secured-letter-filled-50.png" />
+    <Content Include="Resources\icons8-software-filled-32.png" />
+    <Content Include="Resources\Logout-24.png" />
+    <Content Include="Resources\Logout-48.png" />
+    <Content Include="Resources\OpeningBalance-48.png" />
+    <Content Include="Resources\OpeningBalance1-50.png" />
+    <Content Include="Resources\OpeningStock.png" />
+    <Content Include="Resources\Paint Palette Filled-32.png" />
+    <Content Include="Resources\Prefix-32.png" />
+    <Content Include="Resources\Prefix.png" />
+    <Content Include="Resources\Prefix2-32.png" />
+    <Content Include="Resources\Prefix3-32.png" />
+    <Content Include="Resources\Prefix4-32.png" />
+    <Content Include="Resources\Print Preview -16.png" />
+    <Content Include="Resources\Print Preview Filled -16.png" />
+    <Content Include="Resources\Print-16.png" />
+    <Content Include="Resources\Purchase-48.png" />
+    <Content Include="Resources\Refresh-16.png" />
+    <Content Include="Resources\Refresh-32.png" />
+    <Content Include="Resources\Save Filled-16.png" />
+    <Content Include="Resources\Save-32.png" />
+    <Content Include="Resources\Search-16.png" />
+    <Content Include="Resources\Search-32.png" />
+    <Content Include="Resources\Shopping Cart Filled-50.png" />
+    <Content Include="Resources\Stock In - 48.png" />
+    <Content Include="Resources\Stock In -32.png" />
+    <Content Include="Resources\Stock Out - 48.png" />
+    <Content Include="Resources\Stock Transfer - 48.png" />
+    <Content Include="Resources\Stones-48.png" />
+    <Content Include="Resources\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CashBank\" />
+    <Folder Include="Reports\Sales\" />
+    <Folder Include="TransactionsCommon\AdditionalItem\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.111.0\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net451\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net451\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.111.0\build\net451\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

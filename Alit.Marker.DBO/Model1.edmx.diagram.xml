@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="32caab06c0e848a5b7711fa824725f9d" Name="Diagram1" ZoomLevel="96">
+        <EntityTypeShape EntityType="dbMarkerModel.SQLITEADMIN_QUERIES" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblAccount" Width="1.5" PointX="12" PointY="135.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblAccountGroup" Width="1.5" PointX="9.75" PointY="135.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblAccountOpeningBalance" Width="1.5" PointX="14.25" PointY="126.125" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblAccountVoucher" Width="1.5" PointX="14.25" PointY="145.25" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblAccountVoucherDetaill" Width="1.5" PointX="17.5" PointY="138" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblAdditionalItemMaster" Width="1.5" PointX="17.25" PointY="142.625" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblCity" Width="1.5" PointX="5.25" PointY="130.625" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblCompany" Width="1.5" PointX="7.5" PointY="136.875" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblContraVoucher" Width="1.5" PointX="16.5" PointY="154.875" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblContraVoucherDetail" Width="1.5" PointX="27.75" PointY="157.125" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblCountry" Width="1.5" PointX="0.75" PointY="102.125" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblCustomer" Width="1.5" PointX="15" PointY="137.125" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblCustomerBalance" Width="1.5" PointX="17.25" PointY="131.5" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblCustomerOpBal" Width="1.5" PointX="15" PointY="130.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblDEMOGUID" Width="1.5" PointX="5.75" PointY="3.75" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblFinPeriod" Width="1.5" PointX="9.75" PointY="115.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblGridLayout" Width="1.5" PointX="12" PointY="130.25" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblInvoicePrintFormat" Width="1.5" PointX="5.75" PointY="6.75" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblJournalVoucher" Width="1.5" PointX="19.5" PointY="157.875" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblJournalVoucherDetail" Width="1.5" PointX="30.75" PointY="157.625" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblPayment" Width="1.5" PointX="19.5" PointY="150.25" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblPriceList" Width="1.5" PointX="9.75" PointY="140.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblProduct" Width="1.5" PointX="19.5" PointY="141.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblProductFormula" Width="1.5" PointX="24.75" PointY="138.125" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblProductFormulaDetail" Width="1.5" PointX="33" PointY="142.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblProductStock" Width="1.5" PointX="24.75" PointY="133.5" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblProductTaxCategory" Width="1.5" PointX="9.75" PointY="157.125" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblPurchaseBill" Width="1.5" PointX="25.5" PointY="151.125" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblPurchaseBillAdditional" Width="1.5" PointX="27.75" PointY="151.5" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblPurchaseBillProductDetail" Width="1.5" PointX="30.75" PointY="136.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblPurchaseReceiptNoPrefix" Width="1.5" PointX="9.75" PointY="177.875" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblPurchaseReturn" Width="1.5" PointX="22.5" PointY="143.625" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblPurchaseReturnAdditional" Width="1.5" PointX="27.75" PointY="139.625" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblPurchaseReturnNoPrefix" Width="1.5" PointX="9.75" PointY="165" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblPurchaseReturnProductDetail" Width="1.5" PointX="24.75" PointY="124.5" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblRate" Width="1.5" PointX="21.75" PointY="139.125" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblReceipt" Width="1.5" PointX="22.5" PointY="152.625" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblReceiptNoPrefix" Width="1.5" PointX="9.75" PointY="181.5" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSaleInvoice" Width="1.5" PointX="30.75" PointY="145.625" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSaleInvoiceAdditional" Width="1.5" PointX="33" PointY="147.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSaleInvoiceNoPrefix" Width="1.5" PointX="9.75" PointY="123" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSaleInvoiceProductDetail" Width="1.5" PointX="33" PointY="132.25" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSaleOrder" Width="1.5" PointX="36" PointY="140.25" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSaleOrderAdditional" Width="1.5" PointX="38.25" PointY="144.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSaleOrderNoPrefix" Width="1.5" PointX="9.75" PointY="168.75" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSaleOrderProductDetail" Width="1.5" PointX="38.25" PointY="130.5" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSaleReturn" Width="1.5" PointX="25.5" PointY="142.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSaleReturnAdditional" Width="1.5" PointX="27.75" PointY="145.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSaleReturnNoPrefix" Width="1.5" PointX="9.75" PointY="161.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSaleReturnProductDetail" Width="1.5" PointX="27.75" PointY="130.5" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSettingL0" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSettingMasterL1" Width="1.5" PointX="7.75" PointY="5.75" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSettingsL1" Width="1.5" PointX="9.75" PointY="126.625" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSMSLog" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblSoftwareRegistration" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblState" Width="1.5" PointX="3" PointY="159.5" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblStock" Width="1.5" PointX="21.75" PointY="130.25" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblStockPDetail" Width="1.5" PointX="30" PointY="132.125" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblStockVoucherType" Width="1.5" PointX="19.5" PointY="132.25" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblTransport" Width="1.5" PointX="9.75" PointY="153.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblUnit" Width="1.5" PointX="17.25" PointY="126.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblUpdateScriptLog" Width="1.5" PointX="2.75" PointY="9.75" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblUser" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblUserGroup" Width="1.5" PointX="0.75" PointY="3.375" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblUserGroupPerimission" Width="1.5" PointX="3" PointY="5.125" />
+        <EntityTypeShape EntityType="dbMarkerModel.tblVoucherType" Width="1.5" PointX="9.75" PointY="172.375" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAccount_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAccount_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAccount_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAccount_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAccountOpeningBalance_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAccountVoucher_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAccountVoucher_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAccountVoucherDetaill_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAdditionalItemMaster_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblContraVoucherDetail_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblJournalVoucherDetail_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPayment_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPayment_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBill_6_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBill_7_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturn_6_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturn_7_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblReceipt_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblReceipt_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoice_10_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoice_11_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturn_7_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturn_8_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAccountGroup_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAccountGroup_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAccountOpeningBalance_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAccountVoucher_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAccountVoucher_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAccountVoucherDetaill_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblContraVoucher_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblJournalVoucher_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPayment_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBill_4_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturn_4_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblReceipt_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoice_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturn_5_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAdditionalItemMaster_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblAdditionalItemMaster_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblProduct_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblProduct_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblProduct_4_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBill_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBillAdditionals_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBillProductDetail_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBillProductDetail_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBillProductDetail_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturn_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturnAdditionals_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturnProductDetail_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturnProductDetail_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturnProductDetail_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoice_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoiceAdditionals_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoiceProductDetail_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoiceProductDetail_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoiceProductDetail_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrder_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrderAdditionals_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrderProductDetail_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrderProductDetail_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrderProductDetail_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturn_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturnAdditionals_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturnProductDetail_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturnProductDetail_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturnProductDetail_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblCity_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblCity_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblCompany_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblCustomer_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblContraVoucher_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblCustomer_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblCustomerBalance_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblCustomerOpBal_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblFinPeriod_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblGridLayouts_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblJournalVoucher_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPayment_5_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPriceList_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblProduct_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblProductFormula_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblProductStock_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblProductTaxCategory_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBill_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBillProductDetail_4_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReceiptNoPrefix_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturn_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturnNoPrefix_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturnProductDetail_4_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblRate_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblReceipt_6_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblReceiptNoPrefix_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoice_6_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoiceNoPrefix_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoiceProductDetail_4_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrder_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrderNoPrefix_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrderProductDetail_4_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturn_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturnNoPrefix_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturnProductDetail_4_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSettingsL1_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblStock_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblTransport_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblVoucherType_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblContraVoucher_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblContraVoucherDetail_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblState_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblCustomer_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblCustomerBalance_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrder_5_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblCustomerBalance_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblCustomerOpBal_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblGridLayouts_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPayment_4_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblProductStock_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBill_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBillProductDetail_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturn_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturnProductDetail_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblReceipt_5_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoice_5_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoiceProductDetail_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrder_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrderProductDetail_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturn_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturnProductDetail_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblStock_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblJournalVoucher_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblJournalVoucherDetail_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPayment_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblRate_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoice_7_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrder_4_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturn_4_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblStock_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblProduct_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblProductFormula_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblProductFormulaDetail_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblProductStock_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBillProductDetail_6_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturnProductDetail_6_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblRate_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoiceProductDetail_6_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrderProductDetail_6_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturnProductDetail_6_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblStock_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblStockPDetail_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblProductFormulaDetail_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBill_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBill_5_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBill_8_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBillAdditionals_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBillProductDetail_7_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseBillProductDetail_5_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturn_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturn_5_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturn_8_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturnAdditionals_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturnProductDetail_7_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblPurchaseReturnProductDetail_5_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblReceipt_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblReceipt_4_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoice_3_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoice_12_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoice_2_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoice_4_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoice_8_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoice_9_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoiceAdditionals_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoiceProductDetail_7_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrder_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleInvoiceProductDetail_5_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrder_6_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrderAdditionals_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrderProductDetail_7_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleOrderProductDetail_5_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturn_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturn_6_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturn_9_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturnAdditionals_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturnProductDetail_7_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblSaleReturnProductDetail_5_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblStock_4_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblStockPDetail_1_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblUser_0_0" />
+        <AssociationConnector Association="dbMarkerModel.FK_tblUserGroupPerimission_0_0" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

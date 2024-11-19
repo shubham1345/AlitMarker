@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F4C76C1-52A4-432D-ABDF-E630AD451DF8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Alit.Marker.Model</RootNamespace>
+    <AssemblyName>Alit.Marker.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Account\AccountViewModel.cs" />
+    <Compile Include="Account\Account\AccountVoucherViewModel.cs" />
+    <Compile Include="Account\Account\BookAccountLookupListViewModel.cs" />
+    <Compile Include="Account\Group\AccountGroupNatureViewModel.cs" />
+    <Compile Include="Account\Group\AccountGroupTypeLookupListModel.cs" />
+    <Compile Include="Account\Group\AccountGroupViewModel.cs" />
+    <Compile Include="Account\Transactions\Bank\BankReconciliationDashboardViewModel.cs" />
+    <Compile Include="Account\Transactions\ContraVoucher\ContraVoucherViewModel.cs" />
+    <Compile Include="Account\Transactions\JournalVoucher\JournalVoucherViewModel.cs" />
+    <Compile Include="Account\VoucherType\VoucherTypeViewModel.cs" />
+    <Compile Include="CashBank\CommonCashBank.cs" />
+    <Compile Include="Account\Transactions\Receipt\ReceiptNoPrefix\ReceiptNoPrefixViewModel.cs" />
+    <Compile Include="City\City\CityViewModel.cs" />
+    <Compile Include="City\Country\CountryViewModel.cs" />
+    <Compile Include="City\State\StateViewModel.cs" />
+    <Compile Include="CommonFunctions.cs" />
+    <Compile Include="CommonProperties.cs" />
+    <Compile Include="Customer\CustomerOpeningBalanceViewModel.cs" />
+    <Compile Include="Customer\CustomerViewModel.cs" />
+    <Compile Include="Inventory\Transaction\StockIn\StockInViewModel.cs" />
+    <Compile Include="Inventory\Transaction\StockOut\StockOutViewModel.cs" />
+    <Compile Include="Inventory\StockVoucherViewModel.cs" />
+    <Compile Include="Manufacturing\Process\ProcessViewModel.cs" />
+    <Compile Include="Manufacturing\Formula\ProductFormulaViewModel.cs" />
+    <Compile Include="Inventory\Masters\Product\PriceListViewModel.cs" />
+    <Compile Include="Inventory\ProductOpeningStockViewModel.cs" />
+    <Compile Include="Inventory\Masters\StockItemTaxCategory\StockItemTaxCategoryViewModel.cs" />
+    <Compile Include="Inventory\Masters\StockItemTax\StockItemTaxViewModel.cs" />
+    <Compile Include="Inventory\Masters\StockItem\StockItemViewModel.cs" />
+    <Compile Include="Inventory\Masters\Unit\UnitViewModel.cs" />
+    <Compile Include="ERP\Transaction\Purchase\PurchaseBill\PurchaseReciptNo\PurchaseReceiptNoPrefixViewModel.cs" />
+    <Compile Include="ERP\Transaction\Purchase\PurchaseBill\PurchaseBillViewModel.cs" />
+    <Compile Include="Account\Transactions\Payment\PaymentViewModel.cs" />
+    <Compile Include="Account\Transactions\Receipt\ReceiptViewModel.cs" />
+    <Compile Include="ERP\Transaction\Purchase\PurchaseReturn\PurchaseReturnNoPrefix\PurchaseReturnNoPrefixViewModel.cs" />
+    <Compile Include="ERP\Transaction\Purchase\PurchaseReturn\PurchaseReturnViewModel.cs" />
+    <Compile Include="Reports\Accounts\Transactions\BalanceReportViewModel.cs" />
+    <Compile Include="Reports\Accounts\Transactions\DayBookReportViewModel.cs" />
+    <Compile Include="Reports\Accounts\Transactions\LedgerReportViewModel.cs" />
+    <Compile Include="Reports\CompanyDetailReportModel.cs" />
+    <Compile Include="Reports\CustomerPrintDetailModel.cs" />
+    <Compile Include="Reports\Customer\CustomerListReportModel.cs" />
+    <Compile Include="Inventory\Reports\StockLedgerReportModel.cs" />
+    <Compile Include="Inventory\Reports\StockInHandReportModel.cs" />
+    <Compile Include="Account\Transactions\Receipt\ReceiptPrintModel.cs" />
+    <Compile Include="Reports\ReportCommonFunctions.cs" />
+    <Compile Include="ERP\Transaction\Sales\SaleReturn\SaleReturnPrintModel.cs" />
+    <Compile Include="ERP\Transaction\Sales\SaleOrder\SaleOrderPrintModel.cs" />
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\SaleInvoicePrintModel.cs" />
+    <Compile Include="ERP\Reports\Sales\SaleRegisterPrintModel.cs" />
+    <Compile Include="ERP\Reports\Sales\SaleSummaryPrintModel.cs" />
+    <Compile Include="Reports\Sales\TaxRegisterReportModel.cs" />
+    <Compile Include="Reports\TransactionsCommon\AdditionalDetailBaseReportModel.cs" />
+    <Compile Include="Reports\TransactionsCommon\ProductDetailBaseReportModel.cs" />
+    <Compile Include="Reports\TransationReports\CustomerBalanceReportModel.cs" />
+    <Compile Include="Reports\TransationReports\TransactionRegisterReportModel.cs" />
+    <Compile Include="ERP\Transaction\Sales\ISaleTransactionDashboardViewModel.cs" />
+    <Compile Include="ERP\Transaction\Sales\SaleTransactionDashboardViewModel.cs" />
+    <Compile Include="Template\ILookupListViewModel.cs" />
+    <Compile Include="Template\Report\IReportViewModel.cs" />
+    <Compile Include="ERP\Masters\AdditionalItems\AdditionalItemViewModel.cs" />
+    <Compile Include="ERP\Transaction\Sales\SaleReturn\SaleReturnNoPrefix\SaleReturnNoPrefixViewModel.cs" />
+    <Compile Include="ERP\Transaction\Sales\SaleReturn\SaleReturnViewModel.cs" />
+    <Compile Include="ERP\Transaction\Sales\SaleOrder\SaleOrderNoPrefix\SaleOrderNoPrefixViewModel.cs" />
+    <Compile Include="ERP\Transaction\Sales\SaleOrder\SaleOrderViewModel.cs" />
+    <Compile Include="ERP\Masters\Transport\TransportViewModel.cs" />
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\SaleInvoiceNoPrefix\SaleInvoiceNoPrefixViewModel.cs" />
+    <Compile Include="ERP\Transaction\Sales\SaleInvoice\SaleInvoiceViewModel.cs" />
+    <Compile Include="Settings\ApplicationSettings\ApplicationSettings.cs" />
+    <Compile Include="Settings\Compnay\CompanyViewModel.cs" />
+    <Compile Include="CRUDModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\FinancialPeriod\FinPeriodViewModel.cs" />
+    <Compile Include="Settings\MenuOptionsViewModel.cs" />
+    <Compile Include="Template\Report\CRUDModels.cs" />
+    <Compile Include="Template\DashboardViewModel.cs" />
+    <Compile Include="Template\EditUserInfoViewModel.cs" />
+    <Compile Include="Template\ICRUDViewModel.cs" />
+    <Compile Include="Template\IDashboardViewModel.cs" />
+    <Compile Include="Template\IGridCRUDViewModel.cs" />
+    <Compile Include="TransactionsCommon\AdditionalItemDetailBaseViewModel.cs" />
+    <Compile Include="TransactionsCommon\ProductDetailBaseViewModel.cs" />
+    <Compile Include="TransactionsCommon\TransactionCommonViewModel.cs" />
+    <Compile Include="Users\UserGroup\UserGroupViewModel.cs" />
+    <Compile Include="Users\User\UserViewModel.cs" />
+    <Compile Include="ValueChangedEvent.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\Alit.Marker.Model.Sales.SaleTransactionDashboardViewModel.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
